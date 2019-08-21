@@ -8,7 +8,8 @@
         </div>
 
         <div class="col-sm-12">
-            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required>
+            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" 
+            required #nome="ngModel" [(ngModel)]="curso.nome">
         </div>
     </div>
 
@@ -18,7 +19,8 @@
         </div>
 
         <div class="col-sm-12">
-            <input type="text" class="form-control" name="descricao" id="descricao" placeholder="Descricão">
+            <input type="text" class="form-control" name="descricao" id="descricao" placeholder="Descricão"
+            required #descricao="ngModel" [(ngModel)]="curso.descricao">
         </div>
     </div>
 
@@ -29,7 +31,8 @@
         </div>
 
         <div class="col-sm-12"> 
-            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail de Contato">
+            <input type="email" email class="form-control" name="email" id="email" placeholder="E-mail de Contato"
+            required #email="ngModel" [(ngModel)]="curso.email">
         </div>
     </div>
 

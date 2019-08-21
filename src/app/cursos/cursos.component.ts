@@ -6,7 +6,15 @@ import { NgForm } from '@angular/forms';
   templateUrl: './cursos.component.html',
   styleUrls: ['./cursos.component.css']
 })
-export class CursosComponent implements OnInit {
+export class CursosComponent implements OnInit 
+{
+
+  curso: any =
+  {
+    nome: null,
+    descricao: null,
+    email: null
+  }
 
   constructor() { }
 
@@ -16,6 +24,11 @@ export class CursosComponent implements OnInit {
   onSubmit(formulario: NgForm)
   {
     console.log(formulario);
+    console.log('----- Valores do formulario')
+    console.log(formulario.form.value)
+    console.log('----- Valores do objeto')
+    console.log(this.curso)
+
   }
 
 }
